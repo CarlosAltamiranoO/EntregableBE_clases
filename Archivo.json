@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "title": "notebook gamer",
+    "description": "noptebook gamer omen 15",
+    "price": 600000,
+    "thumbnail": "Sin imagen",
+    "code": "a990",
+    "stock": 6
+  },
+  {
+    "id": 2,
+    "title": "PC",
+    "description": "NPC gamer",
+    "price": 200000,
+    "thumbnail": "con imagen en algun lado",
+    "code": "a167",
+    "stock": 16
+  },
+  {
+    "id": 3,
+    "title": "teclado",
+    "description": "teclado mecanico",
+    "price": 40000,
+    "thumbnail": "Sin imagen",
+    "code": "a166",
+    "stock": 6
+  },
+  {
+    "id": 4,
+    "title": "teclado",
+    "description": "teclado membreana",
+    "price": 10000,
+    "thumbnail": "Sin imagen",
+    "code": "a006",
+    "stock": 30
+  },
+  {
+    "id": 5,
+    "title": "celular",
+    "description": "celular moto g52",
+    "price": 100000,
+    "thumbnail": "Sin imagen",
+    "code": "c001",
+    "stock": 10
+  },
+  {
+    "id": 6,
+    "title": "celular samsung",
+    "description": "samsubg a10",
+    "price": 120000,
+    "thumbnail": "Sin imagen",
+    "code": "a996",
+    "stock": 9
+  },
+  {
+    "id": 7,
+    "title": "PC oficina",
+    "description": "Pc i5 8gb ram ssd 240gb",
+    "price": 99000,
+    "thumbnail": "con imagen en algun lado",
+    "code": "a180",
+    "stock": 5
+  },
+  {
+    "id": 8,
+    "title": "teclado gamer",
+    "description": "teclado menbrana led",
+    "price": 32000,
+    "thumbnail": "Sin imagen",
+    "code": "a180",
+    "stock": 6
+  },
+  {
+    "id": 9,
+    "title": "teclado",
+    "description": "teclado membrana",
+    "price": 10000,
+    "thumbnail": "Sin imagen",
+    "code": "a006",
+    "stock": 30
+  },
+  {
+    "id": 10,
+    "title": "notebook empresarial",
+    "description": "lenovo thinkpad l15 12GBram SSD500GB ",
+    "price": 900000,
+    "thumbnail": "Sin imagen",
+    "code": "c245",
+    "stock": 6
+  }
+]
