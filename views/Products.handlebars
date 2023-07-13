@@ -1,0 +1,10 @@
+<h3>lista de productos</h3><br>
+{{#if hayProductos}}
+<ul>
+    {{#each productos}}
+    <li>Titulo: {{this.title}} | Desripcion : {{this.description}} | codigo: {{this.code}} | Precio: {{this.price}} | Categoria: {{this.category}} | Stock: {{this.stock}} </li><br>
+    {{/each}}
+</ul>
+{{else}}
+<p>no hay producto para mostrar</p> 
+{{/if}}

@@ -6,6 +6,7 @@
     "price": 600000,
     "thumbnail": "Sin imagen",
     "code": "a990",
+    "category": "notebook",
     "stock": 6
   },
   {
@@ -15,6 +16,7 @@
     "price": 200000,
     "thumbnail": "con imagen en algun lado",
     "code": "a167",
+    "category": "PC de escritorio",
     "stock": 16
   },
   {
@@ -24,6 +26,7 @@
     "price": 40000,
     "thumbnail": "Sin imagen",
     "code": "a166",
+    "category": "perifericos",
     "stock": 6
   },
   {
@@ -33,6 +36,7 @@
     "price": 10000,
     "thumbnail": "Sin imagen",
     "code": "a006",
+    "category": "perifericos",
     "stock": 30
   },
   {
@@ -42,6 +46,7 @@
     "price": 100000,
     "thumbnail": "Sin imagen",
     "code": "c001",
+    "category": "telefonia Mobile",
     "stock": 10
   },
   {
@@ -51,6 +56,7 @@
     "price": 120000,
     "thumbnail": "Sin imagen",
     "code": "a996",
+    "category": "telefonia Mobile",
     "stock": 9
   },
   {
@@ -60,6 +66,7 @@
     "price": 99000,
     "thumbnail": "con imagen en algun lado",
     "code": "a180",
+    "category": "PC de escritorio",
     "stock": 5
   },
   {
@@ -69,15 +76,17 @@
     "price": 32000,
     "thumbnail": "Sin imagen",
     "code": "a180",
+    "category": "perifericos",
     "stock": 6
   },
   {
     "id": 9,
     "title": "teclado",
-    "description": "teclado membrana",
+    "description": "teclado membrana DELL",
     "price": 10000,
     "thumbnail": "Sin imagen",
-    "code": "a006",
+    "code": "a020",
+    "category": "perifericos",
     "stock": 30
   },
   {
@@ -87,6 +96,7 @@
     "price": 900000,
     "thumbnail": "Sin imagen",
     "code": "c245",
+    "category": "notebook",
     "stock": 6
   }
 ]

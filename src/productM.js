@@ -10,12 +10,14 @@ class ProductManager {
     async getProduct() {
         try {
             const json = await fs.promises.readFile(this.path, 'utf-8')
-            if (json === "") return "la lista esta vacia"
+            if (json === "") {
+                return "la lista esta vacia"
+            }
             else {
                 this.products = JSON.parse(json)
+                this.id = this.products.length
             }
             return this.products
-
         } catch (error) {
             console.error(error)
         }
@@ -27,41 +29,37 @@ class ProductManager {
             const json = JSON.stringify(this.products, null, 2)
             await fs.promises.writeFile(this.path, json)
             return "se guardo el producto"
-
         } catch (error) {
             console.error(error)
-
         }
 
     }
 
-    async addProduct(title, description, price, thumbnail, code, stock) {
+    async addProduct(title, description, price, thumbnail, code, category, stock) {
         try {
             await this.getProduct()
-            if (this.products.find((aux) => aux.code === code)) return console.log("el producto ya esta cargado");
-            else {
+            let encontrado = this.products.find((p) => p.code === code)
+            if (encontrado === undefined) {
                 this.id++
-                this.products.push({ id: this.id, title: title, description: description, price: price, thumbnail: thumbnail, code: code, stock: stock })
+                this.products.push({ id: this.id, title: title, description: description, price: price, thumbnail: thumbnail, code: code, category: category, stock: stock })
+                console.log(await this.salveProduct())
+                return "se agrego el producto"
             }
-            console.log(await this.salveProduct())
-
+            else return "el producto ya esta cargado"
         } catch (error) {
             console.error(error)
         }
-
     }
 
     async getProductsById(id) {
         try {
             await this.getProduct()
-            let respuesta = this.products.find((producto) => producto.id === id);
-            if (respuesta === undefined)  return "ERROR: el  producto no existe" 
+            let respuesta = this.products.find((producto) => producto.id === id)
+            if (respuesta === undefined) return "ERROR: el  producto no existe"
             else return respuesta
-
         } catch (error) {
             console.error(error)
         }
-
     }
 
     async updateProduct(id, campoActualizar, cambio) {
@@ -80,7 +78,6 @@ class ProductManager {
         } catch (error) {
             console.log(error)
         }
-
     }
 
     async deleteProduct(id) {
@@ -88,14 +85,13 @@ class ProductManager {
             await this.getProduct()
             const aux = this.products.filter((producto) => producto.id !== id)
             if (JSON.stringify(aux) === JSON.stringify(this.products)) {
-                console.log("No hay producto a eliminar")
+                return "No hay producto a eliminar"
             }
             else {
                 this.products = aux
                 await this.salveProduct()
-                console.log("producto eliminado")
+                return "producto eliminado"
             }
-
         } catch (error) {
             console.log(error)
         }
